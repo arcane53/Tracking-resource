@@ -1,4 +1,3 @@
-# Tracking-resource
 Project: Resource Landing Pages
 This project consists of three interconnected HTML pages designed to introduce a resource, facilitate its download, and provide a thank you message to users. The pages are styled using Tailwind CSS, ensuring a modern and responsive design.
 
