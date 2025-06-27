@@ -38,7 +38,7 @@
         </p>
 
         <!-- Subscription Form -->
-        <form class="space-y-6">
+        <form id="signupForm" class="space-y-6">
             <div>
                 <label for="name" class="block text-left text-sm font-medium text-gray-700 mb-1">Full Name</label>
                 <input
@@ -71,6 +71,26 @@
 
         <p class="mt-8 text-sm text-gray-600">We respect your privacy. No spam, ever.</p>
     </div>
+
+    <script>
+        // Get the form element
+        const signupForm = document.getElementById('signupForm');
+
+        // Add an event listener for the form submission
+        signupForm.addEventListener('submit', function(event) {
+            // Prevent the default form submission behavior (which would cause a page reload)
+            event.preventDefault();
+
+            // In a real application, you would send the form data to a server here.
+            // For this example, we'll just simulate a successful submission.
+
+            // Simulate a slight delay before redirecting, as if processing data
+            setTimeout(() => {
+                // Redirect the user to the thank you page
+                window.location.href = 'thankyou.html';
+            }, 500); // Redirect after 0.5 seconds
+        });
+    </script>
 
 </body>
 </html>
